@@ -105,7 +105,7 @@ function clocker() {
 let clickRec2 = 0;
 let FSC = () => {
     clickRec2 ++;
-    let choule = clickRec2 % 2;
+    let echoule = clickRec2 % 2;
     if (echoule == 1){
         document.body.requestFullscreen();
     } else {
