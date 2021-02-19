@@ -102,3 +102,13 @@ function clocker() {
     };
     document.getElementById("clock-in").innerHTML = hour10 + hour1 + ":" + min10 + min1 + ":" + sec10 + sec1;
 };
+let clickRec2 = 0;
+let FSC = () => {
+    clickRec2 ++;
+    let choule = clickRec2 % 2;
+    if (echoule == 1){
+        document.body.requestFullscreen();
+    } else {
+        document.exitFullscreen();
+    }
+}
