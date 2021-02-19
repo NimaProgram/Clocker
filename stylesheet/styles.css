@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    user-select: none;
+}
+
+.clock-htm {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#RunOrStop {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 70vh;
+    left: 0;
+    color: red;
+    border-bottom: 3px white solid;
+    font-size: 3vw;
+    transition: 0.2s linear;
+}
+
+#clock-in {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: solid 0px;
+    color: white;
+    font-size: 20vw;
+}
+#startButton {/*button*/
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    margin: auto;
+    top: 60vh;
+    right: 30vw;
+    bottom:  0;
+    left: 0;
+    border-radius: 50%;
+    border: solid 0px;
+    font-size: 2.5vw;
+    line-height: 6vh;
+    background-color: rgb(10, 151, 57);
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 3px 4px rgb(0, 70, 0);
+}
+#startButton:hover{
+    box-shadow: 2px 0 10px rgb(0, 0, 0) inset;
+}
+#resetButton {
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    margin: auto;
+    top: 60vh;
+    right: 0;
+    bottom:  0;
+    left: 30vw;
+    border-radius: 50%;
+    border: solid 0px;
+    font-size: 2.5vw;
+    background-color: rgb(13, 32, 117);
+    color: rgb(235, 237, 240);
+    text-shadow: 5px 3px 4px rgb(6, 13, 70);
+}
+
+#resetButton:hover{
+    box-shadow: 2px 0 10px rgb(0, 0, 0) inset;
+}
+
+.centeralig {
+    text-align: center;
+}
