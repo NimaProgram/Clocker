@@ -1,12 +1,12 @@
 let clickRec = 0;
 let Amari;
 let Intervalew;
-let speed = 1000;
+let speed = 10;
 let Intervalex;
 window.onload = () => {shokika();};
 
 let shokika = () => {
-        document.getElementById("clock-in").innerHTML = hour10 + hour1 + ":" + min10 + min1 + ":" + sec10 + sec1;
+        document.getElementById("clock-in").innerHTML = hour10 + hour1 + ":" + min10 + min1 + ":" + sec10 + sec1 + ":" + msec10 + msec1;
     };
     
 
@@ -55,7 +55,7 @@ function resetTimer() {
     secback = 0;
     let p = document.getElementById("RunOrStop");
     p.style.opacity = 1;
-    document.getElementById("clock-in").innerHTML = hour10 + hour1 + ":" + min10 + min1 + ":" + sec10 + sec1;
+    document.getElementById("clock-in").innerHTML = hour10 + hour1 + ":" + min10 + min1 + ":" + sec10 + sec1 + ":" + msec10 + msec1;
     document.getElementById("RunOrStop").innerHTML = "Stopping";
 };
 
@@ -68,18 +68,31 @@ let min10 = 0;
 let sec1 = 0;
 let sec10 =0;
 
-let secback = 0;
+let msec1 =0;
+let msec10 =0;
+
+let msecback = 0;
 
 function clocker() {
-    secback ++;
+    msecback ++;
 
-    if (secback > 9) {
-        secback = 0;
+    if (msecback > 9) {
+        msecback = 0;
+        msec1 = 0;
+        msec10 ++;
+    } else {
+        msec1 ++;
+    };
+
+    if (msec10 > 9) {
+        msec10 = 0;
+        sec1 ++;
+    }
+
+    if(sec1 > 9) {
         sec1 = 0;
         sec10 ++;
-    } else {
-        sec1 ++;
-    };
+    }
 
     if (sec10 > 5) {
         sec10 = 0;
@@ -100,7 +113,7 @@ function clocker() {
         hour1 = 0;
         hour10 ++;
     };
-    document.getElementById("clock-in").innerHTML = hour10 + hour1 + ":" + min10 + min1 + ":" + sec10 + sec1;
+    document.getElementById("clock-in").innerHTML = hour10 + hour1 + ":" + min10 + min1 + ":" + sec10 + sec1 + ":" + msec10 + msec1;
 };
 let clickRec2 = 0;
 let FSC = () => {
