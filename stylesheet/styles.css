@@ -60,6 +60,23 @@ body{
 #startButton:hover{
     box-shadow: 2px 0 10px rgb(0, 0, 0) inset;
 }
+
+#fullsc{
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    margin: auto;
+    top: 60vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    border: solid 0px;
+    font-size: 2.5vw;
+    background-color: yellow;
+    color: white;
+}
+
 #resetButton {
     position: absolute;
     width: 12vw;
