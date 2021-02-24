@@ -40,6 +40,8 @@ let threeflont = () => {
     }
 }
 
+//---------------ボタンが押されるとタイマーをリセットするスクリプト---------------
+
 function resetTimer() {
     clickRec = 0;
     Amari = 0;
@@ -52,12 +54,16 @@ function resetTimer() {
     min10 = 0;
     sec1 = 0;
     sec10 = 0;
-    secback = 0;
+    msecback = 0;
+    msec1 = 0;
+    msec10 = 0;
     let p = document.getElementById("RunOrStop");
     p.style.opacity = 1;
     document.getElementById("clock-in").innerHTML = hour10 + hour1 + ":" + min10 + min1 + ":" + sec10 + sec1 + ":" + msec10 + msec1;
     document.getElementById("RunOrStop").innerHTML = "Stopping";
 };
+
+//---------------タイマーの数を宣言---------------
 
 let hour1 = 0;
 let hour10 = 0;
@@ -72,6 +78,10 @@ let msec1 =0;
 let msec10 =0;
 
 let msecback = 0;
+
+//---------------変数宣言ここまで---------------
+
+//---------------タイマーを動かす本体---------------
 
 function clocker() {
     msecback ++;
@@ -115,6 +125,9 @@ function clocker() {
     };
     document.getElementById("clock-in").innerHTML = hour10 + hour1 + ":" + min10 + min1 + ":" + sec10 + sec1 + ":" + msec10 + msec1;
 };
+
+//---------------本体ここまで---------------
+
 let clickRec2 = 0;
 let FSC = () => {
     clickRec2 ++;
