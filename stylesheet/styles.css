@@ -1,6 +1,10 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+*:focus {
+    outline: none;
+  }
 
 body{
     margin: 0;
@@ -9,8 +13,6 @@ body{
 
 .clock-htm {
     background-color: black;
-    width: 100vw;
-    height: 100vh;
     position: relative;
 }
 
@@ -26,7 +28,7 @@ body{
     color: red;
     border-bottom: 3px white solid;
     font-size: 3vw;
-    transition: 0.2s linear;
+    transition: 1ms linear;
     font-family: "DotGothic16", suns-serif;
 }
 
@@ -62,7 +64,7 @@ body{
     text-shadow: 5px 3px 4px rgb(0, 70, 0);
     font-family: "DotGothic16", suns-serif;
 }
-#startButton:hover{
+#startButton:active{
     box-shadow: 2px 0 10px rgb(0, 0, 0) inset;
 }
 
@@ -102,11 +104,11 @@ body{
     font-family: "DotGothic16", suns-serif;
 }
 
-#resetButton:hover{
+#resetButton:active{
     box-shadow: 2px 0 10px rgb(0, 0, 0) inset;
 }
 
-#fullscB:hover{
+#fullscB:active{
     box-shadow: 2px 0 10px rgb(0, 0, 0) inset;
 }
 
@@ -115,53 +117,84 @@ body{
 }
 
 .min1__button {
-    position: absolute;
-    width: 8vw;
-    height: 5.5vh;
     border: 0;
     top: 0;
     right: 80vw;
     bottom: 75vh;
     left: 0;
-    margin: auto;
-    font-size: 2vw;
 }
 .min3__button {
-    position: absolute;
-    width: 8vw;
-    height: 5.5vh;
     border: 0;
     top: 0;
     right: 60vw;
     bottom: 75vh;
     left: 0;
-    margin: auto;
-    font-size: 2vw;
 }
 .min5__button {
-    position: absolute;
-    width: 8vw;
-    height: 5.5vh;
     border: 0;
     top: 0;
     right: 80vw;
     bottom: 60vh;
     left: 0;
-    margin: auto;
-    font-size: 2vw;
 }
 .min10__button {
-    position: absolute;
-    width: 8vw;
-    height: 5.5vh;
     border: 0;
     top: 0;
     right: 60vw;
     bottom: 60vh;
     left: 0;
+}
+
+.reset__min__button {
+    width: 18vw;
+    height: 5.5vh;
     margin: auto;
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    font-size: 2vw;
+    border: 0;
+    top: 0;
+    right: 70vw;
+    bottom: 90vh;
+    left: 0;
+}
+
+.min10__button, .min5__button, .min3__button, .min1__button {
+    width: 8vw;
+    height: 5.5vh;
+    margin: auto;
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
     font-size: 2vw;
 }
-.min10__button, .min5__button, .min3__button, .min1__button {
+
+.stats__timer__out {
+    position: absolute;
+    width: 18vw;
+    height: 5vh;
+    text-align: center;
+    margin: auto;
     font-family: 'Dancing Script', cursive;
+    position: absolute;
+    font-size: 2vw;
+    border: 0;
+    top: 0;
+    right: 70vw;
+    bottom: 45vh;
+    left: 0;
+    color: white;
+    border: 0.01vw white solid;
+}
+
+.stats__timer__content {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: fit-content;
+    height: fit-content;
+    font-size: 2vw;
+    color: rgb(45, 206, 255);
 }

@@ -8,12 +8,30 @@
         <link rel="stylesheet" href="stylesheet/styles.css">
     </head>
     <body>
+
+
+        <!--オーディオファイルの読み込み-->
+        <audio id="alarm-sound01" preload="auto">
+            <source src="sound/alarm_01.mp3" type="audio/mp3">
+        </audio>
+        <audio id="test-sound01" preload="auto">
+            <source src="sound/usertest.mp3" type="audio/mp3">
+        </audio>
+        <!----------------------------->
+
+
         <main>
-            <div class="clock-htm">
+            <div class="clock-htm" id="js__clock-htm">
+
+                
+                <button id="js__1min" class="reset__min__button" onclick="reset_min_Timer()">TimerOFF</button>
                 <button id="js__1min" class="min1__button" onclick="set_1min_Timer()">1min</button>
                 <button id="js__3min" class="min3__button" onclick="set_3min_Timer()">3min</button>
                 <button id="js__5min" class="min5__button" onclick="set_5min_Timer()">5min</button>
                 <button id="js__10min" class="min10__button" onclick="set_10min_Timer()">10min</button>
+                <div class="stats__timer__out">
+                    <p id="js__stats__timer" class="stats__timer__content">Timer OFF</p>
+                </div>
                 <div id="RunOrStop">Stopping</div> 
                 <div id="clock-in"></div>
                 <div class="centeralig">
@@ -21,7 +39,11 @@
                     <button id="fullscB" onclick="FSC()">Full<br />Screen</button>
                     <button id="resetButton" onclick="resetTimer()">Reset</button>
                 </div>
+
+
             </div>
+
+
         </main>
     </body>
 </html>
