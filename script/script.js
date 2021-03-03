@@ -166,7 +166,7 @@ function clocker() {
         stopTimerFunc();
         resetTimerFunc();
         const alarm_sound_content = document.getElementById("alarm-sound01").play();
-        alarmSound = window.setInterval(alarmSoundCalling,8600);
+        alarmSound = window.setInterval(alarmSoundCalling,6000);
     };
     if(min10 == userSetting_0Time) {
         stopTimerFunc();
