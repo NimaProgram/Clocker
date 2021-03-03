@@ -138,3 +138,7 @@ let FSC = () => {
         document.exitFullscreen();
     }
 }
+
+const set_1min_Timer = () => {
+    
+}
