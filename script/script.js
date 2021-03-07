@@ -60,7 +60,6 @@ function startTimer() {
             pcol.style.color = "red";
             stopSound = 0;
             document.getElementById("RunOrStop").innerHTML = "Running";
-            window.clearInterval(alarmSound);
         }
         const alarm_souncontent = document.getElementById("alarm-sound01").pause();
         document.getElementById("alarm-sound01").currentTime = 0;
@@ -113,7 +112,6 @@ const resetTimerFunc = () => {
     let p = document.getElementById("RunOrStop");
     p.style.opacity = 1;
     document.getElementById("RunOrStop").innerHTML = "Stopping";
-    window.clearInterval(alarmSound);
     const alarm_souncontent = document.getElementById("alarm-sound01").pause();
     document.getElementById("alarm-sound01").currentTime = 0;
 }
