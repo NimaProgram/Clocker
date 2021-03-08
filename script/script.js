@@ -114,6 +114,7 @@ const resetTimerFunc = () => {
     document.getElementById("RunOrStop").innerHTML = "Stopping";
     const alarm_souncontent = document.getElementById("alarm-sound01").pause();
     document.getElementById("alarm-sound01").currentTime = 0;
+    result();
 }
 
 function resetTimer() {
