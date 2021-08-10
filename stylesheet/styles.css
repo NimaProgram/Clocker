@@ -83,6 +83,7 @@ body{
     background-color: red;
     color: white;
     line-height: 3vw;
+    text-shadow: 5px 3px 4px rgb(0, 70, 0);
     font-family: "DotGothic16", suns-serif;
 }
 
