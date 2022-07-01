@@ -45,6 +45,7 @@ body{
     color: white;
     font-size: 15vw;
     font-family: "DotGothic16", suns-serif;
+    transition: 300ms linear ;
 }
 #startButton {/*button*/
     position: absolute;
@@ -84,6 +85,7 @@ body{
     color: white;
     line-height: 3vw;
     font-family: "DotGothic16", suns-serif;
+    text-shadow: 5px 3px 4px rgb(0, 70, 0);
 }
 
 #resetButton {

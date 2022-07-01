@@ -13,14 +13,14 @@ const result = () => {
 };
 //-----window処理-----
 
-window.onload = () => {
+window.addEventListener('load', function() {
     shokika();
     WIW = window.innerWidth;
     WIH = window.innerHeight;
     let clientsizex = document.getElementById("js__clock-htm");
     clientsizex.style.width = WIW + "px";
     clientsizex.style.height = WIH + "px";
-};
+});
 
 window.onresize = () => {
     onWIW = window.innerWidth;
